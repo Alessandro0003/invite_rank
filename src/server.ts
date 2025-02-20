@@ -8,7 +8,6 @@ import {
   serializerCompiler,
   validatorCompiler,
 } from 'fastify-type-provider-zod'
-import { z } from 'zod'
 import { env } from './env'
 import { subscribeToEventRoute } from './routes/subscribe-to-event-route'
 
