@@ -5,7 +5,7 @@ import {
   accessInviteLinkParams,
   accessInviteLinkResponse,
 } from '../schemas/access-invite-link'
-import * as Service from '../services/access-invite-link'
+import * as Service from '../services/subscriber/invites'
 
 export const accessInviteLinkrRoute: FastifyPluginAsyncZod = async app => {
   app.get(

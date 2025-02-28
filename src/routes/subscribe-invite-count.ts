@@ -3,7 +3,7 @@ import {
   subscribeInviteCountResponse,
   subscribeInviteCountSchema,
 } from '../schemas/subscribe-invite-count'
-import * as Services from '../services/subscriber-invites-count'
+import * as Services from '../services/subscriber/invites'
 
 export const getSubscribeInviteCountRoute: FastifyPluginAsyncZod =
   async app => {

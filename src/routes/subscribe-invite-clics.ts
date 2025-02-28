@@ -3,7 +3,7 @@ import {
   SubscriberInviteClicsResponse,
   SubscriberInviteClicsSchema,
 } from '../schemas/subscribe-invite-clics'
-import * as Service from '../services/subscriber-invite-clics'
+import * as Service from '../services/subscriber/invites'
 
 export const getSubscribeInviteClicsRoute: FastifyPluginAsyncZod =
   async app => {
@@ -21,7 +21,7 @@ export const getSubscribeInviteClicsRoute: FastifyPluginAsyncZod =
       },
       async request => {
         const { subscriberId } = request.params
-        const { count } = await Service.get({ subscriberId })
+        const { count } = await Service.getClics({ subscriberId })
 
         return { count }
       }
