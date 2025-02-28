@@ -1,6 +1,6 @@
 import type { FastifyPluginAsyncZod } from 'fastify-type-provider-zod'
 import { rankingResponse } from '../schemas/ranking'
-import * as Service from '../services/get-ranking'
+import * as Service from '../services/ranking'
 
 export const getRanking: FastifyPluginAsyncZod = async app => {
   app.get(
