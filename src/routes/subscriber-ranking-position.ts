@@ -3,7 +3,7 @@ import {
   subscriberRankingPositionResponse,
   subscriberRankingPositionSchema,
 } from '../schemas/subsccriber-ranking-position'
-import * as Service from '../services/get-subscriber-ranking-position'
+import * as Service from '../services/ranking'
 
 export const getSubscriberRankinPosition: FastifyPluginAsyncZod = async app => {
   app.get(
