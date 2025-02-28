@@ -3,7 +3,7 @@ import {
   subscribeToEventResponseSchema,
   subscribeToEventSchema,
 } from '../schemas/subscribe-to-event'
-import * as Service from '../services/subscribe-to-event'
+import * as Service from '../services/subscriber'
 
 export const subscribeToEventRoute: FastifyPluginAsyncZod = async app => {
   app.post(
